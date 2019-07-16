@@ -18,7 +18,20 @@ class App extends Component{
       [event.target.name]: event.target.value
 
     })
-  } 
+  }
+  
+  handleSubmit(e){
+    e.preventDefault()
+    const { firstName, message, email } = this.state
+    axios.get(`${process.env.NODE_ENV === 'development' ? 'http://localhost:3001' : 
+    'https://arcane-ocean-22752.herokuapp.com'}/api/form`,{
+    params: {
+      firstName,
+      message,
+      email
+    }
+    })
+  }
 
   render(){
     return (
@@ -36,7 +49,7 @@ class App extends Component{
         >
           Learn React
         </a> */}
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <input type="text" name="firstName" placeholder="FirstName" value={this.state.firstName} onChange={this.handleChange}/>
           <input type="text" name="message" placeholder="Message" value={this.state.message} onChange={this.handleChange}/>
           <input type="text" name="email" placeholder="email" value={this.state.email} onChange={this.handleChange}/>
