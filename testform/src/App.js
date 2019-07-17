@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 class App extends Component{
   constructor() {
@@ -11,6 +12,7 @@ class App extends Component{
       email:""
     }
     this.handleChange = this.handleChange.bind(this) 
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
   
   handleChange(event){
@@ -24,12 +26,15 @@ class App extends Component{
     e.preventDefault()
     const { firstName, message, email } = this.state
     axios.get(`${process.env.NODE_ENV === 'development' ? 'http://localhost:3001' : 
-    'https://arcane-ocean-22752.herokuapp.com'}/api/form`,{
+    'https://arcane-ocean-22752.herokuapp.com'}/api/form`, {
     params: {
       firstName,
       message,
       email
-    }
+    } }).then((response)=>
+      {console.log(response)
+    }).catch((err)=>
+      {console.log(err)
     })
   }
 
