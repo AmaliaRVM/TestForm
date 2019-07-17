@@ -52,7 +52,7 @@ class App extends Component{
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn Reacts
         </a> */}
         <form onSubmit={this.handleSubmit}>
           <input type="text" name="firstName" placeholder="FirstName" value={this.state.firstName} onChange={this.handleChange}/>
