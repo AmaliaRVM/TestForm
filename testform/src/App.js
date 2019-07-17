@@ -26,7 +26,7 @@ class App extends Component{
     e.preventDefault()
     const { firstName, message, email } = this.state
     axios.get(`${process.env.NODE_ENV === 'development' ? 'http://localhost:3001' : 
-    'https://safe-harbor-38503.herokuapp.com/'}/api/form`, {
+    'https://safe-harbor-38503.herokuapp.com'}/api/form`, {
     params: {
       firstName,
       message,
