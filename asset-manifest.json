@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/TestForm/static/css/main.2cce8147.chunk.css",
+    "main.js": "/TestForm/static/js/main.90a9349d.chunk.js",
+    "main.js.map": "/TestForm/static/js/main.90a9349d.chunk.js.map",
+    "runtime~main.js": "/TestForm/static/js/runtime~main.6ecaa6da.js",
+    "runtime~main.js.map": "/TestForm/static/js/runtime~main.6ecaa6da.js.map",
+    "static/js/2.b3250fa9.chunk.js": "/TestForm/static/js/2.b3250fa9.chunk.js",
+    "static/js/2.b3250fa9.chunk.js.map": "/TestForm/static/js/2.b3250fa9.chunk.js.map",
+    "index.html": "/TestForm/index.html",
+    "precache-manifest.6c0d4e03e4e90c1e7850c239fa05fee3.js": "/TestForm/precache-manifest.6c0d4e03e4e90c1e7850c239fa05fee3.js",
+    "service-worker.js": "/TestForm/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/TestForm/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/TestForm/static/media/logo.5d5d9eef.svg"
+  }
+}
