@@ -64,7 +64,7 @@ class App extends Component{
           value={this.state.email} onChange={this.handleChange}/>
         </form>
         <button type="submit">button</button>
-        <h1>{this.state.firstName}</h1>
+        
       
       </header>
     </div>
