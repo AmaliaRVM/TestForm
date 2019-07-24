@@ -55,11 +55,15 @@ class App extends Component{
           Learn Reacts
         </a> */}
         <form onSubmit={this.handleSubmit}>
-          <input type="text" name="firstName" placeholder="FirstName" value={this.state.firstName} onChange={this.handleChange}/>
-          <input type="text" name="message" placeholder="Message" value={this.state.message} onChange={this.handleChange}/>
-          <input type="text" name="email" placeholder="email" value={this.state.email} onChange={this.handleChange}/>
-          <button type="submit">button</button>
+          <input className="field" type="text" name="firstName" placeholder="FirstName" 
+          value={this.state.firstName} 
+          onChange={this.handleChange}/>
+          <input className="field" type="text" name="message" placeholder="Message" 
+          value={this.state.message} onChange={this.handleChange}/>
+          <input className="field" type="text" name="email" placeholder="your email" 
+          value={this.state.email} onChange={this.handleChange}/>
         </form>
+        <button type="submit">button</button>
         <h1>{this.state.firstName}</h1>
       
       </header>

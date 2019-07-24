@@ -31,3 +31,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* Form Style */
+.field{
+  width: 50%;
+  height: 50px;
+  border-radius: 4px;
+  position: relative;
+  transition: 0.3s all;
+  padding-bottom: 10px;
+}
+
+.field:hover{
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
